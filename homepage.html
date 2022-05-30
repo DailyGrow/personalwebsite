@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, intial-scale=0.8" name="viewport">
     <title>My Homepage</title>
+    <script defer src="scripts/main.js"></script>
     <link rel="stylesheet" href="styles/stylesheet.css">
     <!--my-icon-->
     <link rel="shortcut icon" href="images/shortcut-icon.jpg">
@@ -11,27 +12,39 @@
 
 <body>
     <header>
+        <div id="back-switch">
         <h1>Chenjie Bei Website</h1>
-        <section id="main">
+        </div>
+        <button id="updateTheme" onclick="ThemeSwitch()">Toggle Dark-theme</button>
         <nav class="navigation">
-            <!--myimage-->
-            <figure>
-                <img alt="photo" src="images/photo2.jpg">
-                <figcaption>My Photo</figcaption>
-            </figure>
-            <!--menu---->
+            <!--menu-->
             <ul class="menu">
 
                 <li>
                     <a href="projects.html" class="nav-projects">My Projects</a>
                 </li>
                 <li>
-                    <a href="master_education.html" class="nav-master">My Master Education</a>
+                    <a href="master_education.html" class="nav-master">Master Education</a>
                 </li>
 
             </ul>
         </nav>
+        <section id="github">
+            <a href="https://github.com/DailyGrow">My Github</a>
+        </section>        
+
+        <section id="Contact">
+            <a href="mailto:bei.c@northeastern.edu"><img src="images/envelope-solid.svg" alt='email box'>Send Me An Email</a>
         </section>
+
+        <section id="personal-img">
+            <!--myimage-->
+            <figure>
+                <img alt="photo" src="images/photo2.jpg">
+                <figcaption>My Photo</figcaption>
+            </figure>
+        </section>
+        
     </header>
 
     <main>
@@ -65,16 +78,13 @@
                     <p>Software Development Engineer Intern</p>
                 </li>    
 
-                <li>Intel   2019.8-2019.11</li>
+                <li>Intel   2019.8-2019.11
                     <p>Software Development Engineer Intern</p>
+                </li>
             </ul>
         </section>
 
-        <section class="Contact">
-            <h2>Contact Me</h2>
-           
-            <a href="mailto:bei.c@northeastern.edu"><img src="images/Outlook.jpg"/>Send Me An Email</a>
-
+        
     </main>
 
     <footer> <small>&copy; Copyright, Chenjie Bei Website</small> </footer> 

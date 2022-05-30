@@ -5,48 +5,17 @@
     box-sizing: border-box;
 }
 
-
-
 h1{
     height:100%;
-    margin:0;
-   
-    background:rgb(231,225,214);;
-    
+    margin-bottom:10px;  
+    background:rgb(231,225,214);
     text-align: center;
-}
-
-/*--main--*/
-
-figure{
-    border: thin #c0c0c0 solid;
-    display:flex;
-    flex-flow: column;
-    
     
 }
 
-img{
-    height: 200px;
-    object-fit:contain;
-    object-position:center;
-}
-
-figcaption {
-    background-color: #222;
-    color: #fff;
-    font: italic smaller sans-serif;
-    padding: 3px;
-    text-align: center;
-}
-
-main{
-    margin-top:50px;
-    margin-left:60px;
-}
 
 body{
-   
+    
     background-image: url(../images/bg.jpg);
     background-size:cover;
     background-position: center bottom;
@@ -54,32 +23,99 @@ body{
     position:relative;
 }
 
-nav{
+.dark-mode{
+    background-image:url(../images/darkbg.jpg);
+    background-size:cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    position:relative;
+    background-color:#121212;
+    color:white;
+}
+
+.dark-mode h1{
+    background:rgb(29, 13, 156);
+}
+
+
+/*--header--*/
+
+figure{
+    border: thin #c0c0c0 solid;
     display:flex;
+    flex-flow: column;
+    margin:30px auto;
     
-    justify-content:space-between;
+    max-width:200px;
+    
+}
+
+figure img{
+    max-width: 200px;
+    /*border-radius: 50%;*/
+    object-fit:contain;
+    object-position:center;
+    
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding:3px;
+    text-align: center; 
+    
+}
+
+
+nav{
+    position:sticky;
+    top:10px;
+    
+}
+
+.navigation{
+    margin:20px auto;
+    display:flex;
+    justify-content: center;
     align-items: center;
     padding:5px 10%;
+    
+    
+    
 }
 
 nav ul{
     list-style: none;
+    height:60px;
 }
 
 .menu{
     display:flex;
-    justify-content:center;
+    
     align-items:center;
 }
 
-.menu li a{
+.menu li {
+    
+    margin:auto;
     margin-left:20px;
+    
     
 }
 
-.nav-projects,
+.nav-projects
+{
+    margin-top:10px;
+    padding: 13px 47px;
+    
+}
+
 .nav-master{
+    margin-top:10px;
     padding: 13px 25px;
+    
+    
 }
 
 .nav-projects{
@@ -87,14 +123,49 @@ nav ul{
     color:#0f0e0f;
     font-weight:500;
     box-shadow:2px 2px 30px rgba(0,0,0,0.10);
+    
+    
 }
 
 .nav-master{
-    background-color: #124c5f;
+    background-color: #326474;
     color: #ffffff;
     font-weight:400;
-    box-shadow:2px 2px 30px rgba(0,0,0,0.20)
+    box-shadow:2px 2px 30px rgba(0,0,0,0.20);
+    
+    
 }
+
+#github{
+    text-align:center;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+a[href*="github"]:hover{
+    color:crimson ;
+    
+}
+
+a[href*="github"]::before{
+    content:"";
+    background-image: url(../images/Github-Mark-32px.png);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    display: inline-block
+}
+
+#Contact{
+    text-align: center;
+    margin-bottom:20px;
+}
+/*--main--*/
+
+main{
+    margin-top:50px;
+    margin-left:60px;
+}
+
 
 h2{
     margin-top:10px;
@@ -109,13 +180,12 @@ main section ul li{
     margin-bottom: 10px;
 }
 
-main section p{
-    margin-bottom: 10px;
-}
-
 main ul li p{
     margin-top:10px;
     margin-bottom: 10px;
+}
+main section ul li ul{
+    margin-left:20px;
 }
 
 footer{
@@ -126,9 +196,9 @@ footer{
     font-size:20px;
 }
 
-.Contact img{
+#Contact img{
     width:32px;
     height:32px;
 }
 
-a:link{color:yellow}
+a:visited{color:rgb(29, 23, 6)}

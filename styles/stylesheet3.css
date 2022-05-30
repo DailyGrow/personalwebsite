@@ -23,8 +23,10 @@ h1{
 h2{
     margin-bottom:20px;
 }
+
 nav{
-    display:flex;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
     justify-content:space-between;
     align-items: center;
     padding:5px 10%;
@@ -46,7 +48,12 @@ nav ul{
 }
 
 
-.nav-homepage,
+.nav-homepage
+{
+    margin-top:40px;
+    padding: 13px 25px;
+}
+
 .nav-projects{
     margin-top:40px;
     padding: 13px 25px;
@@ -60,7 +67,7 @@ nav ul{
 }
 
 .nav-projects{
-    background-color: #124c5f;
+    background-color: #326474;
     color: #ffffff;
     font-weight:400;
     box-shadow:2px 2px 30px rgba(0,0,0,0.20)
@@ -93,5 +100,5 @@ footer{
     font-size:20px;
 }
 
-a:link{color:blue}
+a:visited{color:rgb(29, 23, 6)}
 

@@ -24,6 +24,11 @@ header{
     text-align: center;
 }
 
+a:visited{
+    color:rgb(29, 23, 6);
+}
+
+
 a[href*="github"]:hover{
     color:crimson ;
     
@@ -44,6 +49,7 @@ h2{
 
 nav{
     display:flex;
+    
     justify-content:space-between;
     align-items: center;
     padding:5px 10%;
@@ -79,12 +85,12 @@ nav ul{
 }
 
 .nav-master{
-    background-color: #124c5f;
+    background-color: #326474;
     color: #ffffff;
     font-weight:400;
     box-shadow:2px 2px 30px rgba(0,0,0,0.20)
 }
-a:link{color:black}
+
 
 
 
