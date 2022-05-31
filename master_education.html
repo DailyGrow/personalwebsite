@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, intial-scale=0.8" name="viewport">
     <title>My Master Education</title>
+    <script defer src="scripts/main.js"></script>
     <link rel="stylesheet" href="styles/stylesheet3.css">
     <!--my-icon-->
     <link rel="shortcut icon" href="images/far-icon.png">
@@ -12,12 +13,13 @@
 
 <body>
     <header>
-        <h1>My Master Education</h1>
-        <nav class="navigation">
-            <a href="https://www.northeastern.edu/" class="logo">
-            <img alt="photo" src="images/neu.jpg">
-            <figcaption>Northeastern Univeristy</figcaption>
-            </a>
+        <h1 id="back-swicth">My Master Education</h1>
+        
+        <div id="bt">
+            <button id="updateTheme" onclick="ThemeSwitch()">Toggle Dark-theme</button>
+        </div>
+    </header>
+    <nav class="navigation">
             <!--menu-->
             <ul class="menu">
 
@@ -28,13 +30,29 @@
                     <a href="projects.html" class="nav-projects">My Projects</a>
                 </li>
             </ul>
-        </nav>
-    </header>
+    </nav>
+    <div id="links">
+        <section id="github">
+            <a href="https://github.com/DailyGrow">My Github</a>
+        </section>        
+
+        <section id="Contact">
+            <a href="mailto:bei.c@northeastern.edu"><img src="images/envelope-solid.svg" alt='email box'>Send Me An Email</a>
+        </section>
+
+        <figure id="college-img">
+        <a href="https://www.northeastern.edu/" class="logo">
+            <img alt="photo" src="images/neu.jpg"></a>
+            <figcaption>Northeastern Univeristy</figcaption>
+        
+        </figure>
+    </div>
+    
 
     <main class="courses">
         <h2>My Master Course</h2>
 
-        <ul><li>CS 5800</li>
+        <ul><li>CS 5800
             <p>
                 Presents the mathematical techniques used for the design and analysis
                  of computer algorithms. Focuses on algorithmic design paradigms and 
@@ -44,9 +62,10 @@
                   bounds, hashing, greedy algorithms, dynamic programming, graph algorithms, 
                   and NP-completeness.
             </p>
-
+            </li>
+        </ul>
         <ul>
-            <li>CS 5010</li>
+            <li>CS 5010
             <p>
                 Introduces modern program design paradigms. Starts with functional program 
                 design, introducing the notion of a design recipe. The latter consists of two 
@@ -58,17 +77,19 @@
                 have an opportunity to practice pair-programming and public code review techniques, as found 
                 in industry today.
             </p>
+            </li>
         </ul>
 
         <ul>
-            <li>CS 6140</li>
+            <li>CS 6140
             <P>
                 Introduce to Machine Learning
             </P>
+            </li>
         </ul>
 
         <ul>
-            <li>CS 5520</li>
+            <li>CS 5520
             <p>
                 Focuses on mobile application development on a mobile phone or related platform. Discusses
                  memory management; user interface building, including both MVC principles and specific tools; 
@@ -78,8 +99,22 @@
                  application and to demonstrate the application that they have developed. The instructor chooses a modern
                   mobile platform to be used in the course.
             </p>
+            </li>
         </ul>
     </main>
+    <section id="CT-Display">
+        <div id="fir">
+            <input type="radio" id="Date" name="radioButton" value="Date" checked>
+            <label for="Date">Date</label>
+        
+        
+            <input type="radio" id="Time" name="radioButton" value="Time">
+            <label for="Time">Time</label>
+        </div>
+        <div id="sec">
+            <button type="button" onclick="showtime()">Display</button>
+        </div>
+    </section>
 
     <footer> <small>&copy; Copyright, Chenjie Bei Website</small> </footer> 
 

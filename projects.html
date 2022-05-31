@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, intial-scale=0.8" name="viewport">
     <title>My Projects</title>
+    <script defer src="scripts/main.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -15,9 +16,14 @@
 
 <body>
     <header>
-        <h1>My Projects</h1>
-        <a href="https://github.com/DailyGrow">My Github</a>
-        <nav class="navigation">
+        
+        <h1 id="back-switch">My Projects</h1>
+        
+        <div id="bt">
+            <button id="updateTheme" onclick="ThemeSwitch()">Toggle Dark-theme</button>
+        </div>
+    </header>
+    <nav class="navigation">
             <!--menu-->
             <ul class="menu">
 
@@ -28,8 +34,16 @@
                     <a href="master_education.html" class="nav-master">My Master Education</a>
                 </li>
             </ul>
-        </nav>
-    </header>
+    </nav>
+    <div id="links">
+        <section id="github">
+            <a href="https://github.com/DailyGrow">My Github</a>
+        </section>        
+
+        <section id="Contact">
+            <a href="mailto:bei.c@northeastern.edu"><img src="images/envelope-solid.svg" alt='email box'>Send Me An Email</a>
+        </section>
+    </div>
 
 
     <main>
@@ -63,7 +77,7 @@
                 <li>
                     Submitted the results to the competition leaderboard ranking in the top 50 out of over 250
                 </li>
-            <ul>
+            </ul>
 
             <h2>Welfare Evaluation System of Caged Hens</h2>
             <ul>
@@ -91,7 +105,23 @@
             </ul>
         </section>
 
-        <footer> <small>&copy; Copyright, Chenjie Bei Website</small> </footer> 
+        
     </main>
+
+    <section id="CT-Display">
+        <div id="fir">
+            <input type="radio" id="Date" name="radioButton" value="Date" checked>
+            <label for="Date">Date</label>
+        
+        
+            <input type="radio" id="Time" name="radioButton" value="Time">
+            <label for="Time">Time</label>
+        </div>
+        <div id="sec">
+            <button type="button" onclick="showtime()">Display</button>
+        </div>
+    </section>
+
+    <footer> <small>&copy; Copyright, Chenjie Bei Website</small> </footer> 
 </body>
 </html>

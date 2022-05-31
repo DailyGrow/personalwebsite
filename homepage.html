@@ -12,12 +12,15 @@
 
 <body>
     <header>
-        <div id="back-switch">
-        <h1>Chenjie Bei Website</h1>
-        </div>
+        
+        <h1 id="back-switch">Chenjie Bei Website</h1>
+        
+        <div id="bt">
         <button id="updateTheme" onclick="ThemeSwitch()">Toggle Dark-theme</button>
-        <nav class="navigation">
-            <!--menu-->
+        </div>
+    </header>
+    <nav class="navigation">
+        <!--menu-->
             <ul class="menu">
 
                 <li>
@@ -28,7 +31,8 @@
                 </li>
 
             </ul>
-        </nav>
+    </nav>
+    <div id="links">
         <section id="github">
             <a href="https://github.com/DailyGrow">My Github</a>
         </section>        
@@ -44,8 +48,8 @@
                 <figcaption>My Photo</figcaption>
             </figure>
         </section>
-        
-    </header>
+    </div>  
+    
 
     <main>
         <section class="education">
@@ -86,6 +90,19 @@
 
         
     </main>
+    <section id="CT-Display">
+        <div id="fir">
+            <input type="radio" id="Date" name="radioButton" value="Date" checked>
+            <label for="Date">Date</label>
+        
+        
+            <input type="radio" id="Time" name="radioButton" value="Time">
+            <label for="Time">Time</label>
+        </div>
+        <div id="sec">
+            <button type="button" onclick="showtime()">Display</button>
+        </div>
+    </section>
 
     <footer> <small>&copy; Copyright, Chenjie Bei Website</small> </footer> 
 </body>
